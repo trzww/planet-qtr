@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080909">
+  <title>PLANET QTR — Automotive Care</title>
+  <meta name="description" content="Planet QTR — automotive care in Qatar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#080909;--paper:#f3f2ed;--muted:#a6aaa7;--accent:#c7f36b;--line:rgba(255,255,255,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--paper);font-family:"DM Sans",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1240px,calc(100% - 64px));margin:auto}
+    header{position:absolute;z-index:5;top:0;left:0;width:100%;border-bottom:1px solid rgba(255,255,255,.13)}
+    .nav{height:86px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 23px "Space Grotesk";letter-spacing:.13em}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:34px;color:#e1e3df;font-size:12px;letter-spacing:.13em;text-transform:uppercase}.navlinks a{transition:color .2s}.navlinks a:hover{color:var(--accent)}
+    .nav-cta{font-size:11px;letter-spacing:.13em;text-transform:uppercase;border:1px solid rgba(255,255,255,.5);padding:13px 19px}
+    .hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#141716}
+    .hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .hero video{z-index:0}.hero .poster{z-index:0;background:url("planet%20care%201.jpg") center/cover no-repeat;filter:brightness(.55)}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.74),rgba(0,0,0,.18) 75%),linear-gradient(0deg,rgba(0,0,0,.72),transparent 60%);z-index:1}
+    .hero-content{position:relative;z-index:2;padding:190px 0 82px;width:100%}
+    .eyebrow{display:flex;align-items:center;gap:12px;color:var(--accent);font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:25px}.eyebrow:before{content:"";width:34px;height:1px;background:var(--accent)}
+    h1{font:500 clamp(58px,9vw,128px)/.91 "Space Grotesk";letter-spacing:-.075em;margin:0;max-width:900px;text-transform:uppercase}
+    h1 em{font-style:normal;color:var(--accent)}.hero-bottom{display:flex;justify-content:space-between;align-items:end;margin-top:38px;gap:30px}
+    .intro{max-width:390px;color:#d0d2ce;font-size:15px;line-height:1.7}.hero-link{display:inline-flex;align-items:center;gap:22px;padding:16px 0;border-bottom:1px solid var(--accent);font-size:11px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}.hero-link b{font-size:20px;color:var(--accent);font-weight:400}
+    .scroll{position:absolute;right:32px;bottom:35px;z-index:2;color:#d7d9d5;font-size:10px;letter-spacing:.2em;writing-mode:vertical-rl;text-transform:uppercase}
+    section{padding:110px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:36px}.kicker{color:var(--accent);font-size:10px;letter-spacing:.2em;text-transform:uppercase}.section-title{font:500 clamp(38px,6vw,72px)/.98 "Space Grotesk";letter-spacing:-.06em;margin:15px 0 0;text-transform:uppercase}.section-note{max-width:280px;color:var(--muted);font-size:13px;line-height:1.7}
+    .gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.gallery img{width:100%;height:100%;min-height:260px;object-fit:cover;display:block;filter:saturate(.82);transition:transform .7s,filter .7s}.gallery figure{margin:0;overflow:hidden;background:#171a18}.gallery figure:hover img{transform:scale(1.035);filter:saturate(1.05)}.gallery-side{display:grid;grid-template-rows:1fr 1fr;gap:16px}
+    .statement{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:70px 0;display:flex;justify-content:space-between;align-items:center;gap:30px}.statement p{font:500 clamp(30px,5vw,60px)/1.05 "Space Grotesk";letter-spacing:-.055em;max-width:760px;margin:0}.statement p span{color:var(--accent)}
+    footer{padding:35px 0 45px;color:var(--muted);font-size:11px;letter-spacing:.1em;text-transform:uppercase}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{color:var(--paper);font:700 18px "Space Grotesk";letter-spacing:.13em}
+    @media(max-width:700px){.wrap{width:calc(100% - 38px)}.nav{height:70px}.brand{font-size:19px}.navlinks{display:none}.nav-cta{padding:11px 13px;font-size:9px}.hero{min-height:92svh}.hero-content{padding:150px 0 64px}h1{font-size:clamp(55px,15vw,90px)}.hero-bottom{display:block;margin-top:25px}.intro{font-size:13px;max-width:310px}.hero-link{margin-top:22px}.scroll{right:13px;bottom:20px}.section-top{display:block}section{padding:76px 0}.section-note{margin-top:18px}.gallery{grid-template-columns:1fr}.gallery img{min-height:230px}.gallery-side{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.gallery-side img{min-height:165px}.statement{padding:50px 0;display:block}.statement .hero-link{margin-top:25px}.footer-row{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap nav">
+    <a class="brand" href="#">PLANET<span>.</span>QTR</a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#home">Home</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="https://www.instagram.com/planet.qtr/" target="_blank" rel="noopener">Instagram ↗</a>
+  </div></header>
+  <main>
+    <section class="hero" id="home">
+      <div class="poster" aria-hidden="true"></div>
+      <video autoplay muted loop playsinline preload="metadata" poster="planet%20care%201.jpg">
+        <source src="planet-hero.mp4" type="video/mp4">
+      </video>
+      <div class="wrap hero-content">
+        <div class="eyebrow">Automotive care · Qatar</div>
+        <h1>Made for<br>the <em>drive.</em></h1>
+        <div class="hero-bottom">
+          <p class="intro">A closer look at Planet QTR. Explore the brand, the details and the work behind every finish.</p>
+          <a class="hero-link" href="#gallery">Explore Planet <b>↘</b></a>
+        </div>
+      </div>
+      <div class="scroll">Scroll to explore</div>
+    </section>
+    <section id="gallery"><div class="wrap">
+      <div class="section-top"><div><div class="kicker">01 / A closer look</div><h2 class="section-title">Planet in focus.</h2></div><p class="section-note">A selection of visuals from Planet QTR. More details and services can be added once confirmed.</p></div>
+      <div class="gallery">
+        <figure><img src="planet%20care%202.jpg" alt="Planet QTR visual 2" loading="lazy"></figure>
+        <div class="gallery-side">
+          <figure><img src="planet%20care%203.jpg" alt="Planet QTR visual 3" loading="lazy"></figure>
+          <figure><img src="planet%20care%204.jpg" alt="Planet QTR visual 4" loading="lazy"></figure>
+        </div>
+      </div>
+    </div></section>
+    <div class="wrap"><div class="statement"><p>Good care is in <span>the details.</span></p><a class="hero-link" href="https://www.instagram.com/planet.qtr/" target="_blank" rel="noopener">Follow Planet QTR <b>↗</b></a></div></div>
+  </main>
+  <footer id="contact"><div class="wrap footer-row"><div class="footer-brand">PLANET.QTR</div><div>Qatar · <a href="https://www.instagram.com/planet.qtr/" target="_blank" rel="noopener">Instagram ↗</a></div><div>© <span id="year"></span> Planet QTR</div></div></footer>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
